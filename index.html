@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estación Arcade - Venta de Videojuegos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Estación Arcade</h1>
+        <p>Tu tienda de videojuegos de confianza</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Juegos de la semana</h2>
+            <div class="grid-3-columnas">
+                <div class="card">
+                    <h3>Video Local 1</h3>
+                    <video controls>
+                        <source src="videos/bloodborne.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <div class="card">
+                    <h3>Video Local 2</h3>
+                    <video controls>
+                        <source src="videos/zelda.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="card">
+                    <h3>Video YouTube de Prueba</h3>
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Nuestros Videojuegos</h2>
+            <div class="grid-3-columnas">
+                <div class="card">
+                    <img src="img/juego1.jpg" alt="Portada Juego 1">
+                    <h3>Juego 1</h3>
+                    <p>$45.000 CLP</p>
+                </div>
+                
+                <div class="card">
+                    <img src="img/juego2.jpg" alt="Portada Juego 2">
+                    <h3>Juego 2</h3>
+                    <p>$35.000 CLP</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/juego3.jpg" alt="Portada Juego 3">
+                    <h3>Juego 3</h3>
+                    <p>$50.000 CLP</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contáctanos</h2>
+            <div class="form-container">
+                <form action="gracias.html" method="GET">
+                    
+                    <div class="caja-formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="caja-formulario">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="caja-formulario">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </div> <footer>
+        <p>© 2026 Estación Arcade. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

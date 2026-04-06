@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor para centrar */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* grid 3 videos y juegos*/
+.grid-3-columnas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* estilo para las tarjetas de juegos y videos */
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* imagenes y videos dentro del contenedor */
+.card img, 
+.card video, 
+.card iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.card iframe {
+    aspect-ratio: 16/9; /* proporción del video de YouTube */
+}
+
+/* Formulario centrado */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto; /* ce */
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.caja-formulario {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-formulario input, 
+.caja-formulario textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+    .grid-3-columnas {
+        grid-template-columns: 1fr; /* Cambia a 1 sola columna en celulares */
+    }
+}
