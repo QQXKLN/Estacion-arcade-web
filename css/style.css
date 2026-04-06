@@ -39,25 +39,36 @@ h2 {
 
 /* estilo para las tarjetas de juegos y videos */
 .card {
-    background-color: white;
+   background-color: white;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: center;
+    
+   /* alineacion */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* imagenes y videos dentro del contenedor */
-.card img, 
 .card video, 
 .card iframe {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
     border-radius: 3px;
 }
 
-.card iframe {
-    aspect-ratio: 16/9; /* proporción del video de YouTube */
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* fuerza las imagenes a un cuadrado perfecto */
+    object-fit: contain; /*muestra sin recortar*/
+    border-radius: 3px;
+    margin-bottom: 15px;
 }
+
+
 
 /* Formulario centrado */
 .form-container {
@@ -96,6 +107,47 @@ button {
 button:hover {
     background-color: #555;
 }
+
+
+/* --- estilos para pagina de gracias --- */
+
+.link-header {
+    color: white;
+    text-decoration: none;
+}
+
+.contenedor-gracias {
+    text-align: center;
+    margin-top: 80px;
+    min-height: 50vh;
+}
+
+.texto-gracias {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 40px; 
+}
+
+
+.btn-volver {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.btn-volver:hover {
+    background-color: #555;
+}
+
+.footer-fijo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 
 /* DISEÑO RESPONSIVE */
 @media (max-width: 768px) {
